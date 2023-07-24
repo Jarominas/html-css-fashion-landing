@@ -253,10 +253,10 @@ li a {
       justify-content: space-between;
       align-items: center;
 }
-.card {
+.new-arrivals .card {
       transition: 0.2s ease-in-out;
 }
-.card:hover {
+.new-arrivals .card:hover {
       scale: 1.02;
       cursor: pointer;
 }
@@ -266,4 +266,31 @@ li a {
 
 .card i {
       font-size: 30px;
+}
+
+/* SALE ===================== */
+
+.sale {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px;
+}
+.sale .card {
+      border-radius: 0;
+}
+
+.sale-right {
+      background-color: #ebd96b;
+}
+.sale h1 {
+      font-size: 110px;
+      width: 550px;
+      font-weight: 900;
+      line-height: 0.8;
+}
+.sale p {
+      font-size: 2em;
+      line-height: 0.8;
+      text-align: left;
 }
