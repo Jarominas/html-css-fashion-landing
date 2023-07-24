@@ -158,7 +158,8 @@ li a {
 .section-left h1 {
       width: 474px;
       font-size: 96px;
-      line-height: 0.9;
+      padding-top: 40px;
+      line-height: 1;
       font-weight: 900;
 }
 .section-left a {
@@ -208,3 +209,61 @@ li a {
 }
 
 /* BRANDS==================== */
+.brands {
+      height: 120px;
+      display: flex;
+      margin-top: 60px;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #ebd96b;
+}
+
+.brands img {
+      background: #ebd96b;
+}
+
+/* New Arrivals =============== */
+.new-arrivals {
+      margin-top: 70px;
+}
+.new-arrivals-title {
+      position: relative;
+      z-index: 1;
+      font-size: 3em;
+      font-weight: 800;
+}
+.new-arrivals-title::before {
+      content: '';
+      background-image: url(../img/new-arrivals-back.svg);
+      position: absolute;
+      width: 192px;
+      height: 25px;
+      bottom: 0;
+      left: 125px;
+      z-index: -1;
+}
+.cards-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+}
+
+.card-body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.card {
+      transition: 0.2s ease-in-out;
+}
+.card:hover {
+      scale: 1.02;
+      cursor: pointer;
+}
+.card h2 {
+      letter-spacing: 0.2px;
+}
+
+.card i {
+      font-size: 30px;
+}
