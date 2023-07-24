@@ -68,3 +68,143 @@ li a {
 .nav .list:hover::before {
       visibility: visible;
 }
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      background-color: skyblue;
+}
+
+/* HEADER */
+.container {
+      max-width: 1170px;
+      margin: 0 auto;
+}
+.header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+      margin-top: 2em;
+}
+.header .logo {
+      display: flex;
+}
+
+header .nav {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      text-transform: uppercase;
+}
+header h3 {
+      font-size: 2.5em;
+      font-weight: 900;
+      margin-left: 0.3em;
+}
+header .nav li:not(:last-child) {
+      margin-right: 2em;
+}
+.active {
+      background-color: black;
+      padding: 15px;
+      color: white;
+      border-radius: 7px;
+}
+li a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.2em;
+      position: relative;
+      font-weight: 500;
+}
+
+.nav .list::before {
+      position: absolute;
+      content: '';
+      bottom: -10px;
+      left: 20px;
+      width: 50%;
+      height: 7px;
+      background-color: #ebd96b;
+      visibility: hidden;
+      transition: all 0.1s ease-in-out;
+}
+
+.nav .list:hover::before {
+      visibility: visible;
+}
+
+/* HOME======================== */
+
+.home {
+      margin-top: 50px;
+      background-color: #f4f6f5;
+      display: flex;
+      position: relative;
+      border-radius: 10px;
+}
+.section-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px;
+}
+.section-left h1 {
+      width: 474px;
+      font-size: 96px;
+      line-height: 0.9;
+      font-weight: 900;
+}
+.section-left a {
+      cursor: pointer;
+      width: 200px;
+      text-align: center;
+}
+.section-right {
+}
+.section-right img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 600px;
+      height: 500px;
+      padding-right: 30px;
+}
+.word-let {
+      position: relative;
+      z-index: 1;
+}
+.word-let::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -25px;
+      width: 350px;
+      height: 112px;
+      transform: rotate(-3deg);
+      background-color: #fff;
+      z-index: -1;
+}
+.word-unique {
+      position: relative;
+      z-index: 1;
+}
+.word-unique::before {
+      content: '';
+      position: absolute;
+      bottom: 10px;
+      left: -430px;
+      width: 400px;
+      height: 112px;
+      transform: rotate(-3deg);
+      background-color: #ebd96b;
+      z-index: -1;
+}
+
+/* BRANDS==================== */
