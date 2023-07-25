@@ -58,7 +58,7 @@ li a {
       content: '';
       bottom: -10px;
       left: 20px;
-      width: 50%;
+      max-width: 50%;
       height: 7px;
       background-color: #ebd96b;
       visibility: hidden;
@@ -128,7 +128,7 @@ li a {
       content: '';
       bottom: -10px;
       left: 20px;
-      width: 50%;
+      max-width: 50%;
       height: 7px;
       background-color: #ebd96b;
       visibility: hidden;
@@ -156,7 +156,7 @@ li a {
       padding: 40px;
 }
 .section-left h1 {
-      width: 474px;
+      max-width: 474px;
       font-size: 96px;
       padding-top: 40px;
       line-height: 1;
@@ -164,7 +164,7 @@ li a {
 }
 .section-left a {
       cursor: pointer;
-      width: 200px;
+      max-width: 200px;
       text-align: center;
 }
 
@@ -172,7 +172,7 @@ li a {
       position: absolute;
       bottom: 0;
       right: 0;
-      width: 600px;
+      max-width: 600px;
       height: 500px;
       padding-right: 30px;
 }
@@ -185,7 +185,7 @@ li a {
       position: absolute;
       top: 0;
       left: -25px;
-      width: 350px;
+      max-width: 350px;
       height: 112px;
       transform: rotate(-3deg);
       background-color: #fff;
@@ -200,7 +200,7 @@ li a {
       position: absolute;
       bottom: 10px;
       left: -430px;
-      width: 400px;
+      max-width: 400px;
       height: 112px;
       transform: rotate(-3deg);
       background-color: #ebd96b;
@@ -239,7 +239,7 @@ li a {
       content: '';
       background-image: url(../img/new-arrivals-back.svg);
       position: absolute;
-      width: 192px;
+      max-width: 192px;
       height: 25px;
       bottom: 0;
       left: 125px;
@@ -289,17 +289,17 @@ li a {
 }
 .sale-right-content {
       padding-left: 20px;
-      width: 650px;
+      max-width: 650px;
       margin-top: 50px;
 }
 .sale h1 {
       font-size: 110px;
-      width: 550px;
+      max-width: 550px;
       font-weight: 900;
       line-height: 0.8;
 }
 .sale p {
-      width: 550px;
+      max-width: 550px;
       margin-top: 1em;
       margin-bottom: 1em;
       font-size: 2em;
@@ -342,7 +342,7 @@ li a {
 
 .contact h1 {
       font-weight: 900;
-      width: 920px;
+      max-width: 920px;
       margin: 0 auto;
       font-size: 3em;
 }
@@ -353,7 +353,7 @@ li a {
 
 .contact .input {
       margin: 0 auto;
-      width: 570px;
+      max-width: 570px;
       position: relative;
 }
 .contact input {
@@ -379,4 +379,84 @@ footer {
 }
 footer img:hover {
       cursor: pointer;
+}
+
+/* MEDIA */
+@media screen and (max-width: 1410px) {
+      .sale img {
+            display: none;
+      }
+      .sale {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+      }
+      .sale-right-content {
+            padding: 30px;
+            width: 100%;
+      }
+}
+
+@media screen and (max-width: 1210px) {
+      .brands {
+            display: none;
+      }
+      .home .section-right {
+            display: none;
+      }
+      .home .section-left {
+            margin: 0 auto;
+      }
+      .sale-right {
+            margin-top: 20px;
+            margin: 0 auto;
+      }
+      .sale h1 {
+            font-size: 2em;
+      }
+}
+@media screen and (max-width: 1030px) {
+      .cards-row {
+            gap: 20px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+      }
+      header .nav {
+            display: none;
+      }
+}
+@media screen and (max-width: 700px) {
+      .contact .input {
+            max-width: 400px;
+      }
+      .contact input {
+            font-size: 1em;
+      }
+      .contact a {
+            bottom: 15%;
+      }
+}
+@media screen and (max-width: 996px) {
+      .footer-company,
+      .footer-link,
+      .footer-legal {
+            display: none;
+      }
+      .footer-fashion {
+            margin: 0 auto;
+      }
+}
+
+@media screen and (max-width: 600px) {
+      .home {
+            text-align: center;
+      }
+      .home a {
+            margin: 0 auto;
+      }
+      .section-left h1 {
+            font-size: 2em;
+      }
 }
