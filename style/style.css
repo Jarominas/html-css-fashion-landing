@@ -167,8 +167,7 @@ li a {
       width: 200px;
       text-align: center;
 }
-.section-right {
-}
+
 .section-right img {
       position: absolute;
       bottom: 0;
@@ -206,6 +205,10 @@ li a {
       transform: rotate(-3deg);
       background-color: #ebd96b;
       z-index: -1;
+}
+.home a {
+      text-decoration: none;
+      font-weight: 600;
 }
 
 /* BRANDS==================== */
@@ -281,7 +284,13 @@ li a {
 }
 
 .sale-right {
-      background-color: #ebd96b;
+      background-image: url('../img/sale_background.png');
+      border: 1px solid #e0c340;
+}
+.sale-right-content {
+      padding-left: 20px;
+      width: 650px;
+      margin-top: 50px;
 }
 .sale h1 {
       font-size: 110px;
@@ -290,7 +299,84 @@ li a {
       line-height: 0.8;
 }
 .sale p {
+      width: 550px;
+      margin-top: 1em;
+      margin-bottom: 1em;
       font-size: 2em;
       line-height: 0.8;
       text-align: left;
+}
+.sale p:nth-child(3) {
+      font-weight: 900;
+}
+.sale-btn {
+      font-size: 2em;
+      text-decoration: none;
+}
+
+/* FAVORITE ================== */
+
+.favorite {
+      margin-top: 70px;
+}
+.favorite .card {
+      transition: 0.2s ease-in-out;
+}
+.favorite .card:hover {
+      cursor: pointer;
+      scale: 1.02;
+}
+
+/* CONTACT =============== */
+
+.contact {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 70px;
+      text-align: center;
+      background-color: #e5c643;
+      height: 623px;
+      color: #fff;
+}
+
+.contact h1 {
+      font-weight: 900;
+      width: 920px;
+      margin: 0 auto;
+      font-size: 3em;
+}
+.contact p {
+      font-size: 1.5em;
+      font-weight: 700;
+}
+
+.contact .input {
+      margin: 0 auto;
+      width: 570px;
+      position: relative;
+}
+.contact input {
+      border-radius: 20px;
+      width: 100%;
+      font-size: 2em;
+      padding: 25px 35px;
+      padding-right: 150px;
+}
+.contact a {
+      padding: 17px 35px;
+      position: absolute;
+      bottom: 22%;
+      right: 3%;
+      text-decoration: none;
+      font-weight: 600;
+}
+
+/* FOOTER =============== */
+
+footer {
+      color: #fff;
+}
+footer img:hover {
+      cursor: pointer;
 }
