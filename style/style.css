@@ -39,11 +39,19 @@ header h3 {
 header .nav li:not(:last-child) {
       margin-right: 2em;
 }
-.active {
+.nav-link.sign-up {
       background-color: black;
-      padding: 15px;
+
       color: white;
       border-radius: 7px;
+}
+.nav-link.sign-up:hover {
+      color: white;
+}
+@media screen and (max-width: 992px) {
+      .nav-link.sign-up {
+            display: none;
+      }
 }
 li a {
       text-decoration: none;
@@ -91,8 +99,9 @@ body {
       height: 80px;
       margin-top: 2em;
 }
-.header .logo {
+.logo {
       display: flex;
+      align-items: center;
 }
 
 header .nav {
